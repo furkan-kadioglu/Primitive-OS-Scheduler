@@ -1,6 +1,15 @@
 # Primitive-OS-Scheduler
 Project for operating systems course
 
+## Developer Environment
+```bash
+Make
+./thread _INPUT_INTEGER_
+```
+My multi-threaded program can be compiled with first line. Second line execute it with following integer argument between 50 and 100 (including 50 & 100).
+
+I used to mutex locks and spin lock. Server threads are created by their client. There is id for each client. I used pthread_create’s parameter in order to send data from client to server.
+
 ## Preemptive Priority Scheduling
 Priority scheduling is a method of scheduling processes based on priority. In this project, I have choosen FIFO algorithm as the scheduling algorithm for equal priorities.
 In preemptive priority scheduling, at the time of arrival of a process in the ready queue, its priority is compared with the priority of the other processes present in the ready queue as well as with the one which is being executed by the CPU at that point of time. The one with the highest priority among all the available processes will be given the CPU next.
